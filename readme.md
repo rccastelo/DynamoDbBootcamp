@@ -9,31 +9,31 @@
 ### AWS
 ### DynamoDB
 
-## Arquivos de estrutura do banco de dados
+## Arquivos de **estrutura** do banco de dados
 
-#### Tabela Music
+#### Tabela *Music*
 music_structure.txt
 
-#### Tabela E-Commerce
+#### Tabela *E-Commerce*
 ecommerce_structure.txt
 
-## Arquivos de queries do banco de dados
+## Arquivos de **queries** do banco de dados
 
-#### Tabela Music
+#### Tabela *Music*
 music_structure.txt
 
-#### Tabela E-Commerce
+#### Tabela *E-Commerce*
 ecommerce_structure.txt
 
-## Arquivos com dados para popular o banco
+## Arquivos com **dados** para popular o banco
 
-#### Tabela Music
-music_item_1.json
-music_item_2.json
-music_item_3.json
-music_list_1.json
-music_list_2.json
+#### Tabela *Music*
+1. music_item_1.json
+2. music_item_2.json
+3. music_item_3.json
+4. music_list_1.json
+5. music_list_2.json
 
-#### Tabela E-Commerce
-ecommerce_item_1.json
-ecommerce_list_1.json
+#### Tabela *E-Commerce*
+1. ecommerce_item_1.json
+2. ecommerce_list_1.json

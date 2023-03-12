@@ -14,16 +14,16 @@
 #### Tabela *Music*
 music_structure.txt
 
-#### Tabela *E-Commerce*
-ecommerce_structure.txt
+#### Tabela *Cardapio*
+cardapio_structure.txt
 
 ## Arquivos de **queries** do banco de dados
 
 #### Tabela *Music*
 music_structure.txt
 
-#### Tabela *E-Commerce*
-ecommerce_structure.txt
+#### Tabela *Cardapio*
+cardapio_structure.txt
 
 ## Arquivos com **dados** para popular o banco
 
@@ -34,6 +34,8 @@ ecommerce_structure.txt
 4. music_list_1.json
 5. music_list_2.json
 
-#### Tabela *E-Commerce*
-1. ecommerce_item_1.json
-2. ecommerce_list_1.json
+#### Tabela *Cardapio*
+1. cardapio_item_1.json
+2. cardapio_item_2.json
+3. cardapio_list_1.json
+4. cardapio_list_2.json

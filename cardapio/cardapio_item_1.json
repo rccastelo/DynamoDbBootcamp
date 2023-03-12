@@ -1,0 +1,13 @@
+{
+	"Estabelecimento": {"S": "Restaurante Xpto"},
+	"Prato": {"S": "Frango a Parmegiana"},
+	"Tipo": {"S": "Individual"},
+	"Cozinha": {"S": "Diversos"},
+	"TipoComida": {"S": "Frango"},
+	"Peso": {"N": "400.00"},
+	"Calorias": {"N": "12500.00"},
+	"QtdPessoas": {"N": "1"},
+	"Gluten": {"BOOL": false},
+	"Lactose": {"BOOL": true},
+	"Valor": {"N": "40.00"}
+}

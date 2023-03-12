@@ -1,0 +1,12 @@
+
+//-- DATABASE
+
+aws dynamodb create-table --table-name Cardapio --attribute-definitions AttributeName=Prato,AttributeType=S AttributeName=Estabelecimento,AttributeType=S --key-schema AttributeName=Prato,KeyType=HASH AttributeName=Estabelecimento,KeyType=RANGE --provisioned-throughput ReadCapacityUnits=10,WriteCapacityUnits=5
+
+//-- INDEX
+
+aws dynamodb update-table --table-name Cardapio --attribute-definitions AttributeName=Estabelecimento,AttributeType=S --global-secondary-index-updates "[{\"Create\":{\"IndexName\": \"Estabelecimento-index\",\"KeySchema\":[{\"AttributeName\":\"Estabelecimento\",\"KeyType\":\"HASH\"}], \"ProvisionedThroughput\": {\"ReadCapacityUnits\": 10, \"WriteCapacityUnits\": 5},\"Projection\":{\"ProjectionType\":\"ALL\"}}}]"
+
+aws dynamodb update-table --table-name Cardapio --attribute-definitions AttributeName=TipoComida,AttributeType=S --global-secondary-index-updates "[{\"Create\":{\"IndexName\": \"TipoComida-index\",\"KeySchema\":[{\"AttributeName\":\"TipoComida\",\"KeyType\":\"HASH\"}], \"ProvisionedThroughput\": {\"ReadCapacityUnits\": 10, \"WriteCapacityUnits\": 5},\"Projection\":{\"ProjectionType\":\"ALL\"}}}]"
+
+aws dynamodb update-table --table-name Cardapio --attribute-definitions AttributeName=Tipo,AttributeType=S AttributeName=Cozinha,AttributeType=S --global-secondary-index-updates "[{\"Create\":{\"IndexName\": \"TipoCozinha-index\",\"KeySchema\":[{\"AttributeName\":\"Tipo\",\"KeyType\":\"HASH\"}, {\"AttributeName\":\"Cozinha\",\"KeyType\":\"RANGE\"}], \"ProvisionedThroughput\": {\"ReadCapacityUnits\": 10, \"WriteCapacityUnits\": 5 },\"Projection\":{\"ProjectionType\":\"ALL\"}}}]"

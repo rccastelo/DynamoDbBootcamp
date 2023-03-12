@@ -1,0 +1,13 @@
+{
+	"Estabelecimento": {"S": "Massaria"},
+	"Prato": {"S": "Nhoque"},
+	"Tipo": {"S": "Individual"},
+	"Cozinha": {"S": "Italiana"},
+	"TipoComida": {"S": "Massa"},
+	"Peso": {"N": "350.00"},
+	"Calorias": {"N": "10000.00"},
+	"QtdPessoas": {"N": "1"},
+	"Gluten": {"BOOL": true},
+	"Lactose": {"BOOL": false},
+	"Valor": {"N": "30.00"}
+}

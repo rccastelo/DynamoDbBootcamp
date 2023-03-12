@@ -1,0 +1,125 @@
+{
+    "Cardapio": [
+        {
+            "PutRequest": {
+                "Item": {
+					"Estabelecimento": {"S": "Massaria"},
+					"Prato": {"S": "Espaguete"},
+					"Tipo": {"S": "Individual"},
+					"Cozinha": {"S": "Italiana"},
+					"TipoComida": {"S": "Massa"},
+					"Peso": {"N": "300.00"},
+					"QtdPessoas": {"N": "1"},
+					"Lactose": {"BOOL": false},
+					"Valor": {"N": "28.50"}
+				}
+            }
+        },
+		{
+            "PutRequest": {
+                "Item": {
+					"Estabelecimento": {"S": "O Churrasqueiro"},
+					"Prato": {"S": "Costela Bovina"},
+					"Tipo": {"S": "Executivo"},
+					"Cozinha": {"S": "Diversos"},
+					"TipoComida": {"S": "Carne"},
+					"Peso": {"N": "400.00"},
+					"Calorias": {"N": "4500.00"},
+					"Valor": {"N": "38.50"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+					"Estabelecimento": {"S": "Japa Ines"},
+					"Prato": {"S": "Sashimi"},
+					"Tipo": {"S": "Individual"},
+					"Cozinha": {"S": "Japonesa"},
+					"TipoComida": {"S": "Peixe"},
+					"Peso": {"N": "250.00"},
+					"Calorias": {"N": "3000.00"},
+					"QtdPessoas": {"N": "1"},
+					"Valor": {"N": "45.00"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+					"Estabelecimento": {"S": "Massaria"},
+					"Prato": {"S": "Canelone"},
+					"Tipo": {"S": "Individual"},
+					"Cozinha": {"S": "Italiana"},
+					"TipoComida": {"S": "Massa"},
+					"Peso": {"N": "350.00"},
+					"Calorias": {"N": "11000.00"},
+					"QtdPessoas": {"N": "1"},
+					"Gluten": {"BOOL": false},
+					"Lactose": {"BOOL": true},
+					"Valor": {"N": "32.50"}
+                }
+            }
+        },
+		{
+            "PutRequest": {
+                "Item": {
+					"Estabelecimento": {"S": "Japa Ines"},
+					"Prato": {"S": "Sunomono"},
+					"Tipo": {"S": "Individual"},
+					"Cozinha": {"S": "Japonesa"},
+					"TipoComida": {"S": "Vegetal"},
+					"Peso": {"N": "200.00"},
+					"Calorias": {"N": "1000.00"},
+					"QtdPessoas": {"N": "1"},
+					"Valor": {"N": "18.50"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+					"Estabelecimento": {"S": "O Churrasqueiro"},
+					"Prato": {"S": "Picanha na Brasa"},
+					"Tipo": {"S": "Familia"},
+					"Cozinha": {"S": "Diversos"},
+					"TipoComida": {"S": "Carne"},
+					"Peso": {"N": "1000.00"},
+					"Calorias": {"N": "11500.00"},
+					"QtdPessoas": {"N": "3"},
+					"Valor": {"N": "105.00"}
+                }
+            }
+        },
+		{
+            "PutRequest": {
+                "Item": {
+					"Estabelecimento": {"S": "Fogo no Teto"},
+					"Prato": {"S": "File Mignon"},
+					"Tipo": {"S": "Executivo"},
+					"Cozinha": {"S": "Diversos"},
+					"TipoComida": {"S": "Carne"},
+					"Peso": {"N": "300.00"},
+					"Calorias": {"N": "4500.00"},
+					"QtdPessoas": {"N": "1"},
+					"Valor": {"N": "35.00"}
+                }
+            }
+        },
+		{
+            "PutRequest": {
+                "Item": {
+					"Estabelecimento": {"S": "Verde Mais"},
+					"Prato": {"S": "Legumes no Vapor"},
+					"Tipo": {"S": "Executivo"},
+					"Cozinha": {"S": "Vegetariana"},
+					"TipoComida": {"S": "Vegetal"},
+					"Peso": {"N": "300.00"},
+					"Calorias": {"N": "580.00"},
+					"QtdPessoas": {"N": "1"},
+					"Valor": {"N": "28.00"}
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "Cardapio": [
+        {
+            "PutRequest": {
+                "Item": {
+					"Estabelecimento": {"S": "Mao na Massa"},
+					"Prato": {"S": "Espaguete"},
+					"Tipo": {"S": "Executivo"},
+					"Cozinha": {"S": "Italiana"},
+					"TipoComida": {"S": "Massa"},
+					"Peso": {"N": "350.00"},
+					"QtdPessoas": {"N": "1"},
+					"Lactose": {"BOOL": true},
+					"Valor": {"N": "32.75"}
+				}
+            }
+        },
+		{
+            "PutRequest": {
+                "Item": {
+					"Estabelecimento": {"S": "Carnivoros"},
+					"Prato": {"S": "Costela Bovina"},
+					"Tipo": {"S": "Familia"},
+					"Cozinha": {"S": "Diversos"},
+					"TipoComida": {"S": "Carne"},
+					"Peso": {"N": "1100.00"},
+					"Calorias": {"N": "14500.00"},
+					"Valor": {"N": "130.00"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+					"Estabelecimento": {"S": "Italianeiro"},
+					"Prato": {"S": "Espaguete"},
+					"Tipo": {"S": "Individual"},
+					"Cozinha": {"S": "Italiana"},
+					"TipoComida": {"S": "Massa"},
+					"Peso": {"N": "350.00"},
+					"QtdPessoas": {"N": "1"},
+					"Valor": {"N": "38.00"}
+				}
+            }
+        }
+	]
+}

@@ -1,0 +1,28 @@
+
+//-- INSERT FROM FILE
+
+aws dynamodb put-item --table-name Cardapio --item file://cardapio_item_1.json
+aws dynamodb put-item --table-name Cardapio --item file://cardapio_item_2.json
+
+//-- BATCH INSERT FROM FILE 
+
+aws dynamodb batch-write-item --request-items file://cardapio_list_1.json
+aws dynamodb batch-write-item --request-items file://cardapio_list_2.json
+
+//-- DELETE
+
+aws dynamodb delete-item --table-name Cardapio --key "{\"Prato\":{\"S\":\"Espaguete\"} ,\"Estabelecimento\":{\"S\":\"Massaria\"}}"
+
+//-- UPDATE
+
+aws dynamodb update-item --table-name Cardapio --key "{\"Prato\":{\"S\":\"Costela Bovina\"} ,\"Estabelecimento\":{\"S\":\"Carnivoros\"}}" --attribute-updates "{\"Lactose\": {\"Value\": {\"BOOL\":false}}}"
+
+//-- SELECT
+
+aws dynamodb query --table-name Cardapio --key-condition-expression "Prato = :prato" --expression-attribute-values "{\":prato\":{\"S\":\"Espaguete\"}}"
+
+aws dynamodb query --table-name Cardapio --index-name Estabelecimento-index --key-condition-expression "Estabelecimento = :estabelecimento" --expression-attribute-values "{\":estabelecimento\":{\"S\":\"O Churrasqueiro\"}}"
+
+aws dynamodb query --table-name Cardapio --index-name TipoComida-index --key-condition-expression "TipoComida = :tipo" --expression-attribute-values "{\":tipo\":{\"S\":\"Vegetal\"}}"
+
+aws dynamodb query --table-name Cardapio --index-name TipoCozinha-index --key-condition-expression "Tipo = :tipo and Cozinha = :cozinha" --expression-attribute-values "{\":tipo\":{\"S\":\"Individual\"},\":cozinha\":{\"S\":\"Italiana\"}}"

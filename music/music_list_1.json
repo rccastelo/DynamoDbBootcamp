@@ -1,0 +1,36 @@
+{
+    "Music": [
+        {
+            "PutRequest": {
+                "Item": {
+				  "Artist": {"S": "Iron Maiden"},
+				  "SongTitle": {"S": "Chains of Misery"},
+				  "AlbumTitle": {"S": "Fear of the Dark"},
+				  "SongYear": {"S": "1992"},
+				  "Genre": {"S": "Rock"}
+				}
+            }
+        },{
+            "PutRequest": {
+                "Item": {
+                  "Artist": {"S": "Iron Maiden"},
+                  "SongTitle": {"S": "Weekend Warrior"},
+                  "AlbumTitle": {"S": "Fear of the Dark"},
+                  "SongYear": {"S": "1992"},
+				  "Genre": {"S": "Rock"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                  "Artist": {"S": "Iron Maiden"},
+                  "SongTitle": {"S": "Fear of the Dark"},
+                  "AlbumTitle": {"S": "Fear of the Dark Tour"},
+                  "SongYear": {"S": "1992"},
+				  "Genre": {"S": "Rock"}
+                }
+            }
+        }
+      ]
+}

@@ -1,0 +1,36 @@
+
+//-- INSERT FROM FILE
+
+aws dynamodb put-item --table-name Music --item file://music_item_1.json
+aws dynamodb put-item --table-name Music --item file://music_item_2.json
+aws dynamodb put-item --table-name Music --item file://music_item_3.json
+
+//-- BATCH INSERT FROM FILE 
+
+aws dynamodb batch-write-item --request-items file://music_list_1.json
+aws dynamodb batch-write-item --request-items file://music_list_2.json
+
+//-- DELETE
+
+aws dynamodb delete-item --table-name Music --key "{\"Artist\":{\"S\":\"Xuxa\"} ,\"SongTitle\":{\"S\":\"O Leaozinho\"}}"
+aws dynamodb delete-item --table-name Music --key "{\"Artist\":{\"S\":\"Lenine\"} ,\"SongTitle\":{\"S\":\"Castanho\"}}"
+
+//-- UPDATE
+
+aws dynamodb update-item --table-name Music --key "{\"Artist\":{\"S\":\"Milton Nascimento\"} ,\"SongTitle\":{\"S\":\"Travessia\"}}" --attribute-updates "{\"Genre\": {\"Value\": {\"S\":\"Musica Brasileira\"}}}"
+
+//-- SELECT
+
+aws dynamodb query --table-name Music --key-condition-expression "Artist = :artist" --expression-attribute-values "{\":artist\":{\"S\":\"Iron Maiden\"}}"
+
+aws dynamodb query --table-name Music --index-name AlbumTitle-index --key-condition-expression "AlbumTitle = :album" --expression-attribute-values "{\":album\":{\"S\":\"Brave New World\"}}"
+
+aws dynamodb query --table-name Music --index-name AlbumTitle-index --key-condition-expression "AlbumTitle = :album" --expression-attribute-values "{\":album\":{\"S\":\"Xuxa e Seus Amigos\"}}"
+
+aws dynamodb query --table-name Music --index-name ArtistAlbumTitle-index --key-condition-expression "Artist = :artist and AlbumTitle = :album" --expression-attribute-values "{\":artist\":{\"S\":\"Iron Maiden\"},\":album\":{\"S\":\"Fear of the Dark\"}}"
+
+aws dynamodb query --table-name Music --index-name SongTitleYear-index --key-condition-expression "SongTitle = :v_song and SongYear = :v_year" --expression-attribute-values "{\":v_song\":{\"S\":\"Wasting Love\"},\":v_year\":{\"S\":\"1992\"}}"
+
+aws dynamodb query --table-name Music --index-name AlbumTitle-index --key-condition-expression "AlbumTitle = :album" --expression-attribute-values "{\":album\":{\"S\":\"Carbono\"}}"
+
+aws dynamodb query --table-name Music --index-name AlbumTitle-index --key-condition-expression "AlbumTitle = :album" --expression-attribute-values "{\":album\":{\"S\":\"Na Pressao\"}}"
